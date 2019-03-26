@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Student Form</title>
+
+</head>
+
+<body>
+  <form>
+    <section>
+      <fieldset>
+        <h1>Personal information</h1>
+
+        <p>
+          <label for="fname"> First Name :
+
+          </label>
+          <input type="text" name="firstname" id="fname" placeholder="First Name" required>
+          <label for="lname">Last Name :
+          </label>
+          <input type="text" name="lastname" id="lname" placeholder="Last Name" required>
+          <br />
+          <br />
+          <label for="age">Age</label>
+          <input list="number">
+          <br />
+
+          <br />
+          <label>Date of Birth
+            <input type="date" name="dateofbirth" value="1990-01-01" max="2019-12-31" min="1990-01-01">
+          </label>
+
+          <br />
+          <br />
+
+          <legend>Sex</legend>
+
+
+          <label for="m">
+            <input type="radio" name="sex" value="M" checked>Male
+          </label>
+
+          <label for="f">
+            <input type="radio" name="sex" value="F">Female
+
+          </label>
+          <br />
+          <br />
+          <label for="email">Email address:
+            <input type="email" name="email" value="" id="mail" placeholder="example@gmail.com" required>
+
+          </label>
+          <br />
+          <br />
+          <label for="phone">Phone Number:
+            <input type="tel" name="phonenumber" id="phone" placeholder="+256750123456" required>
+
+          </label>
+          <br />
+          <br />
+          <h3>Bio</h3>
+          <label for="bio">
+
+            <textarea name="Bio" cols="30" rows="10" id="bio " wrap="hard" id="bio">Write a short description about yourself </textarea>
+
+          </label>
+          <br />
+          <br />
+          <label for="length"> Height:
+            0 <input type="range" name="height" min="1" max="10" step="1.0" value="7.0" id="length">10
+          </label>
+
+
+
+      </fieldset>
+
+
+      <br />
+      <fieldset>
+        <h1> Application Information</h1>
+        <label for="grad">
+          Year of Graduation :
+          <select class="gradyear" name="Graduation">
+
+            <option value='2014'>2014</option>
+            <option value='2015'>2015</option>
+            <option value='2016'>2016</option>
+            <option value='2017'>2017</option>
+            <option value='2018'>2018</option>
+            <option value='2019'>2019</option>
+
+
+          </select>
+          <br />
+          <br />
+        </label>
+        <label for="languages">
+          Programming language to choose :
+          <input list="languages" required />
+          <datalist id="languages">
+            <option value="HTML">
+            <option value="CSS">
+            <option value="JavaScript">
+            <option value="Java">
+            <option value="Objective-C">
+            <option value="PHP">
+            <option value="Go">
+            <option value="Erlang">
+            <option value="Python">
+            <option value="C">
+            <option value="C#">
+            <option value="C++">
+          </datalist>
+
+
+        </label>
+        <br />
+        <br />
+        <label for="document">
+          Educational document:
+          <input type="file" name="educationdocument" value="" id="document">
+        </label>
+      </fieldset>
+      <br/>
+
+      <button type="submit" name="Submit">Submit
+      </button>
+      <button type="reset" name="Reset">Reset</button>
+    </section>
+
+  </form>
+</body>
+
+</html>
